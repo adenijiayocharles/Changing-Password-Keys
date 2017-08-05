@@ -1,4 +1,5 @@
 (function(){
+	var passwordBox = document.getElementById("passwordKeys");
 	//numbers array
 	var numbers = [];
 
@@ -23,9 +24,28 @@
 
 	//create buttons
 	var numbersLength = numbers.length;
-	var buttons = "";
 	for(var i = 0; i < numbersLength; i++){
-		buttons += "<input type='button' name='choices' value="+ numbers[i] +">";
+		passwordBox.innerHTML += "<input type='button' name='choices' value="+ numbers[i] +" class='keys' onclick='showThis(this)'>";
 	}
-	document.write(buttons);
 })();
+
+//display text in password field
+function showThis(arg){
+	var password = document.getElementById("password");
+	password.value += arg.getAttribute("value");
+}
+
+//clears password field
+function clearField(){
+	var password = document.getElementById("password");
+	password.value = "";	
+}
+
+//deletes text
+function deleteText(){
+	var password = document.getElementById("password");
+	var content = password.value;
+	var length = content.length;
+	var newValue = content.slice(0, length-1);
+	password.value = newValue;
+}

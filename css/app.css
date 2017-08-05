@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 200px;
+	height: auto;
+	margin: auto;
+	padding: 10px;
+}
+
+input[type="text"],
+input[type="password"]{
+	margin-left: 3px;
+}
+
+.keys{
+    border: 1px solid #C5C5C5;
+    background-color: #FAFAFA;	
+    outline: none;
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.keys:active{
+    border: 1px solid red;
+    background-color: red;	
+}
