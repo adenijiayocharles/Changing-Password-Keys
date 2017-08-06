@@ -1,3 +1,4 @@
+'use strict';
 (function(){
 	var passwordBox = document.getElementById("passwordKeys");
 	//numbers array
@@ -18,13 +19,13 @@
 			numbers.push(number);
 		}
 		if(numbers.length === 10){
-			i++
+			i++;
 		}
 	}
 
 	//create buttons
 	var numbersLength = numbers.length;
-	for(var i = 0; i < numbersLength; i++){
+	for(let i = 0; i < numbersLength; i++){
 		passwordBox.innerHTML += "<input type='button' name='choices' value="+ numbers[i] +" class='keys' onclick='showThis(this)'>";
 	}
 })();
