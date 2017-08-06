@@ -13,6 +13,7 @@
 
 	// counter
 	var i = 0;
+	var randomCounter = 0;
 	while(i <= 10){
 		var number = getRandomNumber(0, 9);
 		if(numbers.indexOf(number) == -1){
@@ -21,8 +22,9 @@
 		if(numbers.length === 10){
 			i++;
 		}
+		randomCounter++;
 	}
-
+	console.log(randomCounter);
 	//create buttons
 	var numbersLength = numbers.length;
 	for(let i = 0; i < numbersLength; i++){
