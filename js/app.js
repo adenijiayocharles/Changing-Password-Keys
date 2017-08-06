@@ -50,3 +50,16 @@ function deleteText(){
 	var newValue = content.slice(0, length-1);
 	password.value = newValue;
 }
+
+//function submit
+function submit(){
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value;
+	var credentials = "Username = " + username + ". Password = " + password;
+	if(username === "" || password === ""){
+		alert("One or more field is empty");
+	}else{
+		alert(credentials);
+	}
+	return false;
+}

@@ -25,15 +25,15 @@ input[type="password"]{
     margin-bottom: 10px;
 }
 
-input[type="submit"]{
+.submit{
     margin-left: 3px;
     width: 175px;
     padding: 4%;
     cursor: pointer;
-    color: #FFF;
     margin-top: 5px;
     background-color: #007C00;
     border: none;
+    color: #FFFFFF !important;
 }
 
 label{
@@ -42,7 +42,7 @@ label{
 
 .keys{
     border: 1px solid #C5C5C5;
-    background-color: #FAFAFA;	
+    background-color: #FAFAFA;
     outline: none;
     width: 30px;
     height: 30px;
@@ -51,8 +51,8 @@ label{
 }
 
 .keys:active{
-    border: 1px solid red;
-    background-color: red;	
+    border: 1px solid #C62700;
+    background-color: #C62700;
 }
 
 .del,

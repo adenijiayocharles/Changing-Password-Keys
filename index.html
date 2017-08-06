@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Changing Keys </title>
+	<title> Changing Password Keys sample - Inspired By GTB Internet Banking Login Page </title>
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
 
 <h3> Changing Password Keys sample - Inspired By GTB Internet Banking Login Page </h3>
 <div class="wrapper">
-	<form>
 		<label> Username </label>
-		<input type="text" name="">
+		<input type="text" name="" id="username">
 		<label> Password </label>
-		<input type="text" id="password" value="" readonly>
+		<input type="password" id="password" value="" readonly>
 		<div id="passwordKeys"></div>
 		<input type="button" name="" onclick="clearField();" id="clear" value="CLR" class="clr">
 		<input type="button" name="" onclick="deleteText();" id="delete" value="DEL" class="del">
-		<input type="submit">
-	</form>
+		<input type="button" onclick="submit();" class="submit">
 </div>
 
 <script type="text/javascript" src="js/app.js"></script>
